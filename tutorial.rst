@@ -6,7 +6,7 @@ Why is it any useful?
 =====================
 Suppose you log in to the cbcbsub00 or cbcbsub01 node for your work. If you start running a CPU intensive program on the login node, it  will use most of resources causing login node to slow down and lag when other people try to connect. Becaue of this, NEVER run any long-running or CPU internsive program on the login node. 
 
-Ok, where to start?
+Where to start?
 ==================
 If you want to run an alignment program :code:`bowtie2`. This is the command you want to execute:
 
@@ -23,4 +23,14 @@ First thing to do is create a file, say :code:`command.sh` and copy the command 
 
 And you wait until the job is finished. It is that simple!
 
+
+What are these parameters in the sbatch command?
+===============================================
+Well, different commands need different resources and you should specify those in the command. Depending on your memory and time requirements, SLURM will schedule your job on the cluster. There are some more parameters which are useful to know. Here is the list of those paremeters. 
+
+======== =======
+command	meaning
+======= ========
+--job-name You can set job name with this option.
+====== ========
 
