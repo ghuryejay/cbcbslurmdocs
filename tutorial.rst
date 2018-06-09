@@ -11,6 +11,16 @@ Ok, where to start?
 If you want to run an alignment program :code:`bowtie2`. This is the command you want to execute:
 
 .. code::
+
 	bowtie2 -x index -1 first.fq.gz -2 second.fq.gz
 
-First thing to do is create a file, say :code:`command.sh` and copy the command you want to run in that file. Now, you want to submit this job. The easiest way to do is run an :code:`sbatch` command. :code:`sbatch` command runs all the commands in your :code:`command.sh` on the remote machines and returns. 
+First thing to do is create a file, say :code:`command.sh` and copy the command you want to run in that file. Now, you want to submit this job. The easiest way to do is run an :code:`sbatch` command. :code:`sbatch` command runs all the commands in your :code:`command.sh` on the remote machines and returns either the result if command is executed success fully or the error which caused the command to fail. To submit the job, you would run the following command:
+
+.. code:: 
+	
+	sbatch --mem=10gb --qos throughput --time=10:00:00  command.sh
+
+
+And you wait until the job is finished. It is that simple!
+
+
