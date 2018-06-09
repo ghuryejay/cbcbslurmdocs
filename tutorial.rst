@@ -29,7 +29,8 @@ What are these parameters in the sbatch command?
 Well, different commands need different resources and you should specify those in the command. Depending on your memory and time requirements, SLURM will schedule your job on the cluster. There are some more parameters which are useful to know. Here is the list of those paremeters. 
 
 
-:code:`--job-name` -  You can set job name with this option. |
+:code:`--job-name` -  You can set job name with this option. 
+|
 :code:`--mem` - Memory required for the job.
 
 
