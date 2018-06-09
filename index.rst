@@ -6,15 +6,9 @@
 Welcome to CBCB Slurm documentation's documentation!
 ====================================================
 
+Documentation
+==================
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   tutorial
